@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand fs-4 fw-bold" href="#">Yunan Maulana</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#beranda">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tentang">Tentang</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#magang">Magang</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sertifikasi">Sertifikasi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#kontak">Kontak</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section id="beranda" class="beranda container">
+        <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+            <div class="col-12 col-md-8">
+                <h3 class="fw-semibold">Halo! Perkenalkan saya</h3>
+                <h1 class="fw-bold">Yunan Maulana</h1>
+                <p>Sarjana Sistem Informasi dari Universitas Dian Nuswantoro Semarang</p>
+                <a href="#tentang" class="btn button">Info Selengkapnya</a>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center">
+                <img src="images/profile.png" alt="Profile Photo">
+            </div>
+        </div>
+        
+      </section>
+      <section id="tentang" class="tentang container">
+        <p>
+            Saya Yunan Maulana, Sarjana Sistem Informasi Universitas Dian Nuswantoro Semarang tahun 2022. Aktivitas terakhir saat ini aktif sebagai pencari kerja dan melatih kemampuan dalam bidang administrasi dengan mengikuti beberapa sertifikasi tentang Microsoft Office yang dilakukan secara daring.
+        </p>
+        
+      </section>
+      <section id="magang" class="magang container">
+        <div class="row d-flex align-items-center gap-5">
+            <div class="col-12 col-md-8">
+                <h1>Administrasi (2021)</h1>
+                <h5>Koperasi Rukun Makmur Sejahtera Semarang</h5>
+                <p>Koperasi Rukun Makmur Sejahtera Semarang merupakan salah satu koperasi simpan pinjam yang beralamat di Jalan Suari No. 01 Kelurahan Puwodinatan Kecamatan Semarang Tengah. Deskripsi pekerjaan yang saya lakukan antara lain Menkosolidasi data uang masuk dan uang keluar setiap hari dan menuangkan dalam buku kas, Mengelola urutan struk yang telah dibuat kedalam buku kas, dan Mempersiapkan formulir data administrasi anggota dan peminjaman dana.</p>
+            </div>
+            <div class="col-12 col-md-4 magang-img">
+                <div id="magang-1" class="magang-img-item">
+                    <img src="images/magang-1.png" alt="magang 1" id="magang-1">
+                </div>
+                <div id="magang-2" class="magang-img-item">
+                    <img src="images/magang-2.png" alt="magang 2" id="magang-2">
+                </div>
+                <div id="magang-3" class="magang-img-item">
+                    <img src="images/magang-3.png" alt="magang 3" id="magang-3">
+                </div>
+            </div>
+        </div>
+      </section>
+      <section id="sertifikasi" class="sertifikasi container">
+        <p>
+            Aktivitas saya saat ini selain mencari peluang kerja, saya juga mengikuti beberapa pelatihan atau sertifikasi Microsoft Office Excel dan Word yang diselenggarakan oleh Coding Studio untuk membantu mengembangkan kemampuan saya pada bidang Administrasi.
+        </p>
+        <div class="tentang-exp">
+            <div class="tentang-exp-item">
+                <div class="tentang-exp-item-header">
+                    <div>
+                        <h5>Fundamental Excel</h5>
+                        <p>Coding Studio (2023)</p>
+                    </div>
+                    <button class="btn button
+                    " onclick="toggleDetail(event)">Lihat Sertifikat</button>
+                </div>
+                <p class="tentang-exp-item-detail"><img style="width: 100%"; src="images/sertifikat-excel.jpg" alt=""></p>
+            </div>
+            <div class="tentang-exp-item">
+                <div class="tentang-exp-item-header">
+                    <div>
+                        <h5>Fundamental Word</h5>
+                        <p>Coding Studio (2023)</p>
+                    </div>
+                    <button class="btn button
+                    " onclick="toggleDetail(event)">Lihat Sertifikat</button>
+                </div>
+                <p class="tentang-exp-item-detail"><img style="width: 100%"; src="images/sertifikat-word.jpg" alt=""></p>
+            </div>
+        </div>
+      </section>
+      <section id="kontak" class="kontak container">
+        <div class="row d-flex align-items-center gap-5">
+            <div class="col">
+                <p>Jika ingin menghubungi saya, silakan hubungi saya pada kontak dibawah ini.</p>
+                <div class="container px-4 text-center">
+                    <div class="row gx-5">
+                      <div class="col">
+                       <div class="p-3">
+                        <a href="mailto:yunan.maulana03@gmail.com">
+                            <i class="fa fa-envelope" style="font-size: 48px; color: black;"></i>
+                        </a>
+                       </div>
+                      </div>
+                      <div class="col">
+                        <div class="p-3">
+                            <a href="http://wa.me/6281392534840">
+                                <i class="fa fa-whatsapp" style="font-size: 48px; color: black;"></i>
+                            </a>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="p-3">
+                            <a href="https://www.linkedin.com/in/yunan-maulana/">
+                                <i class="fa fa-linkedin-square" style="font-size: 48px; color: black;"></i>
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>    
+    <script src="main.js"></script>
+</body>
+</html>

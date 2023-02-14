@@ -1,0 +1,153 @@
+section {
+    padding-top: 128px;
+    position: relative;
+}
+
+section:before {
+    z-index: -1;
+    content: '';
+    font-size: 72px;
+    color: gray;
+    opacity: 0.25;
+    position: absolute;
+    font-weight: 700;
+    top: 20px;
+    left: -30px;
+}
+
+.btn.button{
+    border: 3px solid black;
+    border-radius: 24px;
+}
+
+.btn.button:hover, .btn.button.active {
+    border: 3px solid black;
+    background-color: black;
+    color: white;
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.25);
+}
+
+.beranda h1 {
+    font-size: 72px;
+}
+
+.beranda h3 {
+    font-size: 48px;
+}
+
+.beranda img{
+    width: 100%;
+}
+
+.tentang p {
+    text-align: justify;
+}
+
+.tentang::before {
+    content: 'Tentang';
+}
+
+.tentang-exp-item {
+    margin-top: 32px;
+}
+
+.tentang-exp-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.tentang-exp-item-detail {
+    display: none;
+}
+
+.magang::before {
+    content: 'Magang';
+}
+
+.magang p {
+    text-align: justify;
+}
+
+.magang-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "magang-1 magang-2 "
+                         "magang-3 magang-3";
+    gap: 16px;
+}
+
+.magang-img img {
+    width: 100%;
+}
+
+.magang-img-item {
+    position: relative;
+}
+
+/*.magang-img-item:hover::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 24px;
+
+}*/
+
+#magang-1 {
+    grid-area: magang-1;
+}
+
+/*#magang-1:hover::after {
+    content: 'Administrasi';
+}*/
+
+#magang-2 {
+    grid-area: magang-2;
+}
+
+#magang-3 {
+    grid-area: magang-3;
+}
+
+.sertifikasi p {
+    text-align: justify;
+}
+
+.sertifikasi::before {
+    content: 'Sertifikasi';
+}
+
+.kontak {
+    padding-bottom: 128px;
+}
+
+.kontak::before {
+    content: 'Kontak';
+}
+
+@media only screen and (max-width: 768px) {
+    .home img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    section::before {
+        left: -10px;
+        font-size: 64px;
+    }
+}
